@@ -6,7 +6,10 @@ class LandmarksController < ApplicationController
   end
 
   get '/landmarks/new' do
-  end 
+    @figures = Figure.all
+    @titles = Title.all
+    erb :'landmarks/new'
+  end
 
   get '/landmarks/:id' do
     @landmark = Landmark.find(params[:id])
