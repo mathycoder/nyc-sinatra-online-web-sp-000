@@ -1,7 +1,8 @@
 class LandmarksController < ApplicationController
 
   get '/landmarks' do
-  end 
+    @landmarks = Landmark.all 
+  end
 
 
 end
