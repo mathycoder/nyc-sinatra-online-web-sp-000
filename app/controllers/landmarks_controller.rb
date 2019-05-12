@@ -29,6 +29,7 @@ class LandmarksController < ApplicationController
   patch '/landmarks/:id' do
     binding.pry 
     @landmark = Landmark.find(params[:id])
+    @landmark = Landmark.find(params[:id])
     erb :'landmarks/show'
   end
 
