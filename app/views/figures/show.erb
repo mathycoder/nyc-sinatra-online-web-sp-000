@@ -5,7 +5,7 @@
 
 <h5>Landmarks:<br>
   <% @figure.landmarks.each do |landmark| %>
-    Name: <%= landmark.name %> Year: <%= landmark.year_completed %> <br>
+    Name: <a><%= landmark.name %> Year: <%= landmark.year_completed %></a> <br>
   <% end %>
 </h5>
 
