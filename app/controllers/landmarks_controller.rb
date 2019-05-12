@@ -12,8 +12,9 @@ class LandmarksController < ApplicationController
   end
 
   post '/landmarks' do
-    binding.pry 
+    binding.pry
     @landmark = Landmark.create(params[:landmark])
+    redirect "/landmarks/#{@landmark.id}"
   end
 
   get '/landmarks/:id' do
