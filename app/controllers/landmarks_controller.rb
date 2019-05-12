@@ -12,7 +12,8 @@ class LandmarksController < ApplicationController
   end
 
   post '/landmarks' do
-  end 
+    binding.pry 
+  end
 
   get '/landmarks/:id' do
     @landmark = Landmark.find(params[:id])
