@@ -20,8 +20,9 @@
     <input type="checkbox" name="figure[landmark_ids][]" value="<%=landmark.id%>" id="landmark_<%=landmark.id.to_s%>" <%="checked" if @figure.landmark_ids.include?(landmark.id)%>><%=landmark.name%></input>
   <% end %></p>
 
-  <p>And/Or enter a new Landmark:
-    <input type="text" name="landmark[name]" id="new_landmark"/>
+  <p>And/Or enter a new Landmark:<br>
+    Name: <input type="text" name="landmark[name]" id="new_landmark"/>
+    Year: <input type="text" name="landmark[year]" id="new_landmark"/>
   </p>
 
   <input type="submit" value="Edit Figure"/><br><br>
